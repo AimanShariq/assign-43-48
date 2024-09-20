@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Box Example</title>
+</head>
+<body>
+    <h1>Click the Link to See an Alert</h1>
+    <a href="#" onclick="showAlert()">Click me!</a>
+
+    <script>
+        function showAlert() {
+            alert("This is an alert box!");
+        }
+    </script>
+</body>
+
+
+<!-- Question 2
+
+
+<head>
+  
+    <title>Mobile Images</title>
+    <style>
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .image-container img {
+            margin: 10px;
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobile Phone Lookup</h1>
+    <div class="image-container">
+        <img src="https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111940_SP706-iphone_6_plus-mul.png" alt="Mobile Image 1" onclick="showAlert('Mobile Image 1')">
+        <img src="https://epicdeals.co.za/wp-content/uploads/2024/02/Galaxy-S6-Edge-Plus-800x800.jpeg" alt="Mobile Image 2" onclick="showAlert('Mobile Image 2')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE9DV2-IDHP5KRGtM0bVWrc9c_IdQYn3fubQ&s" alt="Mobile Image 3" onclick="showAlert('Mobile Image 3')">
+        <img src="https://www.purchase.com.pk/wp-content/uploads/2022/01/huawei-p8-lite.jpg" alt="Mobile Image 4" onclick="showAlert('Mobile Image 4')">
+    </div>
+
+    <script>
+        function showAlert(imageName) {
+            alert('Thanks for purchasing a phone from us');
+        }
+    </script>
+</body> -->
+
+<!-- Question 3
+
+
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .delete-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Index Name Class</h1>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Doe</td>
+                <td>9</td>
+                <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>James</td>
+                <td>8</td>
+                <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Chris</td>
+                <td>14</td>
+                <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Jessica</td>
+                <td>11</td>
+                <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <script>
+        function deleteRow(button) {
+            // Get the row of the button
+            var row = button.parentNode.parentNode;
+            // Delete the row
+            row.parentNode.removeChild(row);
+        }
+    </script>
+</body> -->
+<!-- 
+Question 4
+
+
+<body>
+    <h1>Image Change on Hover</h1>
+    <img id="myImage" src="https://via.placeholder.com/150/FF0000/FFFFFF?text=Original" 
+         alt="Original Image" 
+         onmouseover="changeImage()" 
+         onmouseout="resetImage()">
+
+    <script>
+        function changeImage() {
+            document.getElementById('myImage').src = "https://via.placeholder.com/150/00FF00/FFFFFF?text=Hovered";
+        }
+
+        function resetImage() {
+            document.getElementById('myImage').src = "https://via.placeholder.com/150/FF0000/FFFFFF?text=Original";
+        }
+    </script>
+</body> -->
+
+<!-- Question 5
+
+<head>
+    <title>Counter Example</title>
+    <style>
+        .counter-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .counter {
+            font-size: 2em;
+            margin: 20px;
+        }
+        .button {
+            font-size: 1em;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="counter-container">
+        <h1>Counter</h1>
+        <div class="counter" id="counter">0</div>
+        <button class="button" onclick="increaseCounter()">Increase</button>
+        <button class="button" onclick="decreaseCounter()">Decrease</button>
+    </div>
+
+    <script>
+        let count = 0;
+
+        function increaseCounter() {
+            count++;
+            document.getElementById('counter').innerText = count;
+        }
+
+        function decreaseCounter() {
+            count--;
+            document.getElementById('counter').innerText = count;
+        }
+    </script>
+</body> -->
+</html>
